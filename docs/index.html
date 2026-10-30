@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taper | Digital Sovereignty &amp; Habit Retention</title>
+  <style>
+    /* Technical Carbon Monolith & Electric Citron Palette */
+    /* Strictly Zero Emojis */
+    :root {
+      --bg-base: #09090b;
+      --bg-surface: #121215;
+      --bg-surface-elevated: #1a1a20;
+      --border-line: #27272e;
+      --border-bright: #3f3f4e;
+      --accent-citron: #ccff00;
+      --accent-citron-glow: rgba(204, 255, 0, 0.12);
+      --accent-crimson: #ff3b30;
+      --accent-crimson-subtle: rgba(255, 59, 48, 0.12);
+      --text-white: #f4f4f5;
+      --text-muted: #8e8e9c;
+      --text-dim: #5a5a68;
+      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-white);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-line);
+      padding-bottom: 20px;
+    }
+
+    .brand-tag {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-citron);
+    }
+
+    .status-badge {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      background-color: var(--accent-crimson-subtle);
+      border: 1px solid rgba(255, 59, 48, 0.3);
+      color: var(--accent-crimson);
+      border-radius: 2px;
+    }
+
+    .hero-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      border-top: 3px solid var(--accent-citron);
+      padding: 36px;
+      border-radius: 2px;
+    }
+
+    .mono-meta {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--accent-citron);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text-white);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .lead-text {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      max-width: 720px;
+    }
+
+    /* Course Grid */
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text-white);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .quotes-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .quote-item {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      border-left: 3px solid var(--accent-citron);
+      padding: 20px 24px;
+      border-radius: 2px;
+    }
+
+    .quote-body {
+      font-size: 15px;
+      font-style: italic;
+      color: var(--text-white);
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .quote-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .quote-author {
+      color: var(--accent-citron);
+      font-weight: 600;
+    }
+
+    /* The 21-Day Neuroscience Timeline */
+    .timeline-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-line);
+      padding: 28px;
+      border-radius: 2px;
+    }
+
+    .timeline-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .step-box {
+      background-color: var(--bg-surface-elevated);
+      border: 1px solid var(--border-line);
+      padding: 16px;
+      border-radius: 2px;
+    }
+
+    .step-tag {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-citron);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+
+    .step-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Reinstallation CTA */
+    .cta-box {
+      background-color: var(--bg-surface-elevated);
+      border: 1px solid var(--accent-citron);
+      padding: 32px;
+      text-align: center;
+      border-radius: 2px;
+    }
+
+    .cta-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-white);
+      margin-bottom: 10px;
+    }
+
+    .cta-subtext {
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto 24px auto;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      background-color: var(--accent-citron);
+      color: #09090b;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: all 0.15s;
+    }
+
+    .btn-action:hover {
+      filter: brightness(1.15);
+      box-shadow: 0 0 20px rgba(204, 255, 0, 0.4);
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--text-dim);
+      padding-top: 20px;
+      border-top: 1px solid var(--border-line);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-bar">
+      <div class="brand-tag">// TAPER BEHAVIORAL PROTOCOL</div>
+      <div class="status-badge">UNINSTALL EVENT DETECTED</div>
+    </div>
+
+    <div class="hero-card">
+      <span class="mono-meta">[COGNITIVE REFRAMING SESSION]</span>
+      <h1>Your Dopamine Receptors Are Still Calibrating</h1>
+      <p class="lead-text">
+        The urge to remove your guardrails was not a conscious, deliberate choice. It was the predictable withdrawal response of an algorithmic reward loop engineered by multi-billion-dollar attention platforms. Every time you surrender, your baseline resets to zero.
+      </p>
+
+      <div class="section-title">The Science of Addiction Resistance</div>
+      <div class="quotes-grid">
+        <div class="quote-item">
+          <div class="quote-body">"The urge to remove this extension is not your rational mind speaking. It is the craving of an engineered dopamine circuit trying to preserve its effortless stimulation."</div>
+          <div class="quote-footer">
+            <span class="quote-author">Dr. Anna Lembke</span>
+            <span>DOPAMINE NATION</span>
+          </div>
+        </div>
+
+        <div class="quote-item">
+          <div class="quote-body">"When you give up what you want most for what you want right now, you trade your future sovereignty for algorithmic profit."</div>
+          <div class="quote-footer">
+            <span class="quote-author">Cal Newport</span>
+            <span>DIGITAL MINIMALISM</span>
+          </div>
+        </div>
+
+        <div class="quote-item">
+          <div class="quote-body">"He who conquers himself is mightier than he who conquers a city. Notice the sensation of wanting: it crests like a wave and subsides within 90 seconds if unrewarded."</div>
+          <div class="quote-footer">
+            <span class="quote-author">Marcus Aurelius</span>
+            <span>MEDITATIONS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-card">
+      <div class="section-title">Why 21 Days Is Non-Negotiable</div>
+      <p class="lead-text" style="margin-bottom: 0;">Neuroplastic adaptation follows a three-stage biological cadence. Cold-turkey collapses because receptor down-regulation requires gradual tapering.</p>
+      
+      <div class="timeline-steps">
+        <div class="step-box">
+          <div class="step-tag">Phase 01 // Days 1-7</div>
+          <div class="step-title">Acute Withdrawal Window</div>
+          <div class="step-desc">Phantom thumb twitches and restlessness peak. Tapering from 50 to 35 reels breaks unconscious automaticity.</div>
+        </div>
+
+        <div class="step-box">
+          <div class="step-tag">Phase 02 // Days 8-14</div>
+          <div class="step-title">Synaptic Re-Calibration</div>
+          <div class="step-desc">Compulsive craving reduces by 60%. Deep attention blocks return. Tapering lowers quotas from 35 to 20 reels.</div>
+        </div>
+
+        <div class="step-box">
+          <div class="step-tag">Phase 03 // Days 15-21</div>
+          <div class="step-title">Autonomous Sovereignty</div>
+          <div class="step-desc">Prefrontal cortex density is restored. Compulsive scrolling ceases. Quotas lock at 5 reels maintenance.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <div class="cta-title">Do Not Surrender Your Progress</div>
+      <p class="cta-subtext">You can restore the extension in 5 seconds without penalty. Return to <code>chrome://extensions</code>, re-enable Taper, and protect your 21-day streak.</p>
+      <a href="javascript:window.close()" class="btn-action">Return &amp; Resume Streak</a>
+    </div>
+
+    <div class="footer">
+      Built for deliberate digital sovereignty &bull; Strictly zero emojis
+    </div>
+  </div>
+</body>
+</html>
+

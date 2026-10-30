@@ -1,0 +1,23 @@
+# ==========================================
+# Git Encryption Attributes (git-crypt compatible)
+# ==========================================
+# All proprietary extension code is encrypted with AES-256
+# before being pushed to any public repository.
+
+background.js filter=git-crypt diff=git-crypt
+manifest.json filter=git-crypt diff=git-crypt
+content/** filter=git-crypt diff=git-crypt
+dashboard/** filter=git-crypt diff=git-crypt
+popup/** filter=git-crypt diff=git-crypt
+blocked/** filter=git-crypt diff=git-crypt
+reflection/** filter=git-crypt diff=git-crypt
+shared/** filter=git-crypt diff=git-crypt
+icons/** filter=git-crypt diff=git-crypt
+
+# Documentation and GitHub Pages remain public
+README.md -filter -diff
+docs/** -filter -diff
+scripts/** -filter -diff
+.gitattributes -filter -diff
+.gitignore -filter -diff
+

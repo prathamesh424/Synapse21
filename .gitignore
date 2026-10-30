@@ -1,0 +1,16 @@
+# ==========================================
+# Secret Keys & Credentials (NEVER COMMITTED)
+# ==========================================
+*.key
+*.secret
+*.pem
+*.env
+.git-crypt/
+synapse21-secret.key
+
+# Operating System & IDE junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
