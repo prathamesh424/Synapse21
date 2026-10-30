@@ -1,94 +1,132 @@
-# Taper: 21-Day Digital Detox & Habit Architect
+# Synapse21: Reclaim Your Mind
 
-An end-to-end browser extension built on Manifest V3 designed to permanently break social media and digital addictions through neuroplastic tapering, reel-level tracking, session cooldowns, and cognitive friction defense.
-
-Strictly zero emojis. Minimalist, load-free design with a **Technical Carbon Monolith & Electric Citron** aesthetic, razor-sharp tactile borders, and an Architectural Chalk light mode.
-
----
-
-## Core Systems & Key Features
-
-### 1. 21-Day Habit Tapering (Titration Protocol)
-- **The Problem with Cold-Turkey**: Sudden deprivation shocks the dopamine system, leading to high relapse rates and binge behavior within 48 to 72 hours.
-- **The Tapering Solution**: Systematically lowers your daily allowance across 21 days (e.g., Day 1 starts at 50 reels; Day 2 tightens to 48; Day 3 to 45; progressively tapering down to a sovereign maintenance target of 5 reels by Day 21).
-- **Interactive 21-Day Matrix**: A visual day-by-day progress tracker that displays completed days, active challenges, and future milestones across three neurobiological phases:
-  - **Phase 1 (Days 1 - 7)**: Acute Withdrawal & Thumb Reflex Interruption.
-  - **Phase 2 (Days 8 - 14)**: Synaptic Re-Calibration & Dopamine Down-Regulation.
-  - **Phase 3 (Days 15 - 21)**: Autonomous Habit Mastery & Consolidation.
-
-### 2. Multi-Level Limit & Session Lockout
-- **Reel & Short Detection**: Real-time content observer detects swipe transitions on Instagram Reels (`/reels/`, `/reel/`), YouTube Shorts (`/shorts/`), and TikTok.
-- **Session Thresholds**: Set a hard limit on reels (e.g., 5 reels max) or time (e.g., 5 minutes max).
-- **Automatic Lockout**: Upon hitting your limit, the tab automatically closes or redirects to a distraction-free Cooldown Screen.
-- **Lockout Cooldown Duration**: Prevents reopening the target website for 1, 2, or 3 hours (customizable). Attempting to visit the site during cooldown redirects to the live countdown screen.
-
-### 3. Pre-Removal Extension Guard & Cognitive Friction
-- **Pre-Removal Interception**: Whenever a user navigates to `chrome://extensions` or `edge://extensions` to remove the extension, the background engine intercepts the navigation and immediately displays the **Cognitive Reflection Course**.
-- **The Friction Barrier**: When trying to surrender, pause, or disable rules:
-  - Users are presented with Stoic and neuroscience principles on dopamine loop mechanics.
-  - A mandatory 15-second deliberative reflection timer blocks immediate action, allowing the prefrontal cortex to regain control.
-  - A written pledge checkbox must be acknowledged before any deactivation is confirmed.
-  - Strictly enforces unbypassable 1-hour minimum lockouts: once triggered, cooldowns cannot be lifted or overridden by any button until the full timer finishes.
-- **Standalone Web Reflection Page**: A dedicated page (`docs/index.html`) is prepared for GitHub Pages hosting to ensure any uninstallation event is met with motivational quotes, neuroscience breakdowns, and 1-click reinstallation instructions.
-
-### 4. Friction & Relapse Audit (New Section)
-- **Interactive Craving & Urge Logger**: Record urge events with target site, intensity (1–5), trigger category, and remedy applied.
-- **Craving Pattern Analytics**: Tracks the distribution between Boredom, Phantom Thumb Reflex, Stress Avoidance, and Extension Tampering.
-- **Four Classic Detox Failure Modes**: In-depth behavioral diagnoses and remedies for the Day 4-5 Dopamine Valley, the "Just 2 Minutes" rationalization, browser removal impulses, and addiction substitution.
-
-### 5. Mindful Interstitial Checkpoint
-- Pauses page load for 3 seconds when entering monitored platforms with a conscious breath prompt to interrupt mindless muscle-memory browsing.
+> "No man is free who is not master of himself."  
+> — Epictetus
 
 ---
 
-## Installation Instructions (Chromium Browsers)
+## Pause. Read This Before You Go Back to the Feed.
 
-Works in **Google Chrome**, **Microsoft Edge**, **Brave**, **Opera**, and any Chromium-based browser.
+If you are reading this page, you likely just removed or disabled **[Synapse21](https://github.com/prathamesh424/Synapse21)** from your browser.
 
-1. Open your browser and navigate to:
-   - Chrome: `chrome://extensions`
-   - Edge: `edge://extensions`
-   - Brave: `brave://extensions`
-2. Enable **Developer mode** (toggle in the top-right corner).
-3. Click the **Load unpacked** button in the top-left corner.
-4. Select this directory:
+Do not close this tab yet. Take three slow breaths.
+
+You did not delete Synapse21 because it failed.  
+**You deleted it because it was working.**
+
+---
+
+## What Just Happened in Your Brain (The Truth About the Urge)
+
+A multi-billion-dollar attention industry employs thousands of behavioral engineers whose sole job is to keep your thumb scrolling. They designed short-form video algorithms to exploit an ancient vulnerability in human biology: **variable-ratio dopamine loops**.
+
+When you scroll through reels, your brain is conditioned to expect an effortless chemical reward every few seconds.
+
+When Synapse21 locked your session after your limit, that effortless chemical supply was abruptly cut off.
+
+Your brain panicked. In clinical neuroscience, this sudden surge of irritation, restlessness, and urgency is known as an **Extinction Burst**.
+
+Your mind immediately fabricated convincing rationalizations:
+- *"I will just watch two more videos to relax."*
+- *"This extension is too strict; I can manage my own focus without software."*
+- *"I have had a stressful day; I deserve to scroll."*
+- *"I will delete it now and start fresh next Monday."*
+
+Notice this truth: **None of those thoughts came from your conscious, rational self.**
+
+They were the predictable biological panic of an engineered habit circuit fighting to preserve its hyper-stimulation.
+
+The discomfort you felt right before you clicked "Remove" was not a failure of willpower. It was the physical sensation of neuroplastic rewiring taking place. When you remove your guardrails, that rewiring stops, and your baseline dopamine drops back to zero.
+
+---
+
+## The Stoic Mirror: Who Is in Command?
+
+> "You have power over your mind, not outside events. Realize this, and you will find strength. How much time he gains who does not look to see what his neighbour says or does or thinks, but only at what he does himself."  
+> — **Marcus Aurelius**, *Meditations*
+
+> "The urge to remove your guardrails is not your rational mind speaking. It is the craving of an engineered dopamine circuit trying to preserve its effortless stimulation. When we endure the friction of withdrawal, our dopamine baseline resets, and deep pleasure in everyday life returns."  
+> — **Dr. Anna Lembke**, *Chief of Addiction Medicine, Stanford University (Dopamine Nation)*
+
+> "It is not that we have a short time to live, but that we waste a lot of it. Life is long if you know how to use it. But when it is squandered in mindless distraction, we are at last constrained by final necessity to realise that it has passed away before we knew that it was passing."  
+> — **Seneca**, *On the Shortness of Life*
+
+> "You do not rise to the level of your goals. You fall to the level of your systems. Willpower is a finite battery that empties by midday. Systems and friction are permanent architecture. When you delete your system, you default back to algorithmic captivity."  
+> — **James Clear**, *Atomic Habits*
+
+> "Between stimulus and response there is a space. In that space is our power to choose our response. In our response lies our growth and our freedom."  
+> — **Viktor Frankl**, *Man's Search for Meaning*
+
+---
+
+## What 21 Days Will Do for You
+
+Neuroplastic adaptation follows a three-stage biological cadence. Cold-turkey fails because receptor down-regulation requires progressive adaptation. Synapse21 was built around this 21-day neuroplastic curve:
+
+### Phase 1: Days 1 to 7 — The Withdrawal Storm
+- **The Experience**: Restless fingers, phantom thumb twitches, and subconscious urges to open new tabs.
+- **The Biology**: Your brain is demanding the cheap stimulation it was conditioned to expect.
+- **The Victory**: Holding your limits across these 7 days breaks the unconscious physical reflex. The craving drops by half.
+
+### Phase 2: Days 8 to 14 — Synaptic Re-Calibration
+- **The Experience**: The agitation subsides. Focus lasts longer. Reading, creative work, and conversations become genuinely interesting again.
+- **The Biology**: Dopamine D2 receptor density begins upregulating toward natural baselines.
+- **The Victory**: You regain the ability to experience deep, sustained pleasure from effortful pursuits instead of passive consumption.
+
+### Phase 3: Days 15 to 21 — Autonomous Sovereignty
+- **The Experience**: The compulsive urge to check the feed vanishes. You no longer need to fight yourself.
+- **The Biology**: The prefrontal cortex re-establishes dominance over the basal ganglia habit loop.
+- **The Victory**: You control technology; technology no longer controls you. You have reclaimed hours of your life every single day.
+
+---
+
+## The Direct Question
+
+Look at where mindless scrolling has brought you over the past six months:
+- How many hours were given to people who do not know your name?
+- How many ideas went unwritten?
+- How much deep focus was traded for 15-second flashes of strangers?
+
+An entire industry has turned your attention into their revenue.
+
+**Synapse21 was your personal armor.**
+
+Why throw away your armor in the middle of the battle?
+
+---
+
+## 10 Seconds to Reclaim Your Sovereignty
+
+You do not need to restart from zero. There is no judgment here. Every champion has dropped their guard before picking it back up.
+
+Restore **Synapse21** right now in 10 seconds:
+
+1. Open your browser and go to your extensions manager:
+   - **Chrome**: `chrome://extensions`
+   - **Edge**: `edge://extensions`
+   - **Brave**: `brave://extensions`
+2. Make sure **Developer mode** is switched on (top-right corner).
+3. Click **Load unpacked** and choose your folder:
    ```
    c:\Users\Acer\Desktop\ext\adiction Remover
    ```
-5. Click on the extension icon in your toolbar to view your streak or click **Open Habit Architect** to configure your custom website rules and tapering targets.
+   *(Or download the latest release directly from [github.com/prathamesh424/Synapse21](https://github.com/prathamesh424/Synapse21))*
+4. Pin the **Synapse21** shield icon to your toolbar.
+5. Resume your journey. Your streak is waiting.
 
 ---
 
-## File Structure
+## The Synapse21 Covenant
 
-```
-adiction Remover/
-├── manifest.json              # Manifest V3 specification
-├── background.js              # Service worker (session enforcer, alarms, lockouts)
-├── icons/                     # Generated vector PNG icons (16, 32, 48, 128px)
-├── docs/
-│   └── index.html             # Standalone web detox reflection page (GitHub Pages ready)
-├── shared/
-│   ├── icons.js               # Clean SVG vector icon library (Zero emojis)
-│   ├── quotes.js              # Behavioral psychology & Stoic quotes repository
-│   └── storage.js             # 21-Day Tapering calculation & Chrome storage engine
-├── content/
-│   ├── content.js             # Active DOM reel & video detector + conscious checkpoint
-│   └── content.css            # Sleek floating HUD styling & technical overlay
-├── popup/
-│   ├── popup.html             # Quick glance popup
-│   ├── popup.css
-│   └── popup.js
-├── dashboard/
-│   ├── dashboard.html         # Full 21-Day Habit Architect, Site Manager, & Friction Audit
-│   ├── dashboard.css
-│   └── dashboard.js
-├── blocked/
-│   ├── blocked.html           # Live Lockout Cooldown & Box Breathing page
-│   ├── blocked.css
-│   └── blocked.js
-└── reflection/
-    ├── reflection.html        # Cognitive Friction Gate & Anti-Removal screen
-    ├── reflection.css
-    └── reflection.js
-```
+Before you close this page, make this agreement with yourself:
+
+- *My attention is my life. Where my attention goes, my destiny follows.*
+- *I will not surrender my mind to an algorithm designed for profit.*
+- *I will accept the friction of growth over the numbness of regret.*
+- *I will see Day 21.*
+
+Pick up your shield. Reinstall Synapse21 and take back what is yours.
+
+---
+
+[Return to Synapse21 Repository](https://github.com/prathamesh424/Synapse21)
